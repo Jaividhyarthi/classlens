@@ -6,3 +6,4 @@ data/uploads/*
 data/sessions/*.json
 data/reports/*.json
 *.tmp
+pipeline/models/*.task
