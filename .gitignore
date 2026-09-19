@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.venv/
+data/uploads/*
+!data/uploads/.gitkeep
+data/sessions/*.json
+data/reports/*.json
+*.tmp
+pipeline/models/*.task
