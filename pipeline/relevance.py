@@ -10,7 +10,7 @@ import json
 from dataclasses import dataclass
 
 from pipeline.asr_diarize import DiarizedSegment
-from pipeline.sarvam_client import SarvamAPIError, chat_completion
+from pipeline.sarvam_client import SarvamAPIError, SarvamConfigError, chat_completion
 
 CATEGORIES = [
     "on_topic_instructional",
@@ -99,7 +99,7 @@ def _classify_batch(batch: list[DiarizedSegment], subject: str, syllabus_topics:
         )
         parsed = json.loads(content)
         by_index = {c["index"]: c for c in parsed.get("classifications", [])}
-    except (SarvamAPIError, json.JSONDecodeError, KeyError):
+    except (SarvamAPIError, SarvamConfigError, json.JSONDecodeError, KeyError):
         # A failed or malformed classification call must not silently score
         # segments as on-topic -- mark the whole batch low_confidence instead.
         by_index = {}

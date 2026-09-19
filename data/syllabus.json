@@ -6,6 +6,7 @@
         {
           "id": "unit4",
           "name": "Unit IV: Steam Cycles & Multistage Compression",
+          "scheduled_pct_target": 75,
           "topics": [
             "Rankine Reheat",
             "Supercritical Boilers",
