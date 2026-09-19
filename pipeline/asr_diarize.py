@@ -30,6 +30,7 @@ class TranscriptResult:
     full_transcript: str
     language_code: Optional[str]
     segments: list[DiarizedSegment]
+    language_probability: Optional[float] = None
 
 
 def extract_audio(video_path: Path, out_path: Optional[Path] = None) -> Path:
@@ -65,6 +66,7 @@ def _parse_batch_output(raw: dict) -> TranscriptResult:
     """
     full_transcript = raw.get("transcript", "")
     language_code = raw.get("language_code")
+    language_probability = raw.get("language_probability")
 
     diarized = raw.get("diarized_transcript")
     if not diarized or "entries" not in diarized:
@@ -83,7 +85,10 @@ def _parse_batch_output(raw: dict) -> TranscriptResult:
         )
         for e in diarized["entries"]
     ]
-    return TranscriptResult(full_transcript=full_transcript, language_code=language_code, segments=segments)
+    return TranscriptResult(
+        full_transcript=full_transcript, language_code=language_code,
+        segments=segments, language_probability=language_probability,
+    )
 
 
 def transcribe_and_diarize(
