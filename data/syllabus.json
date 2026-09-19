@@ -1,0 +1,27 @@
+{
+  "subjects": {
+    "Thermodynamics III": {
+      "years": [3],
+      "units": [
+        {
+          "id": "unit4",
+          "name": "Unit IV: Steam Cycles & Multistage Compression",
+          "topics": [
+            "Rankine Reheat",
+            "Supercritical Boilers",
+            "Isentropic Efficiency",
+            "Regenerative Feed",
+            "Mollier Diagrams",
+            "Carnot Cycle Baseline",
+            "T-s Diagrams"
+          ]
+        }
+      ]
+    },
+    "Fluid Dynamics": {"years": [3], "units": []},
+    "Kinematics of Machines": {"years": [3], "units": []},
+    "Heat Transfer Lab": {"years": [3], "units": []},
+    "Finite Element Analysis": {"years": [3], "units": []},
+    "Applied Metallurgy": {"years": [3], "units": []}
+  }
+}

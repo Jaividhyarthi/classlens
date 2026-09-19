@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Manrope:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-tertiary-container": "#eaf5ff", "on-primary-fixed-variant": "#00504e", "surface-container-high": "#232b33", "outline-variant": "#3f4948", "on-tertiary-fixed-variant": "#284a60", "primary-fixed": "#a5f0ed", "tertiary-fixed-dim": "#a9cbe5", "secondary-fixed": "#87f4ee", "surface-container-highest": "#2e353e", "error": "#ffb4ab", "tertiary-fixed": "#c8e6ff", "primary-container": "#2b7a78", "on-secondary": "#003735", "primary-fixed-dim": "#89d3d1", "surface-tint": "#89d3d1", "tertiary": "#a9cbe5", "surface": "#0c141c", "inverse-on-surface": "#29313a", "on-tertiary": "#0e3448", "secondary-container": "#25a19b", "inverse-primary": "#126967", "primary": "#89d3d1", "on-error-container": "#ffdad6", "secondary": "#69d8d1", "on-surface": "#dbe3ef", "on-primary-fixed": "#00201f", "surface-bright": "#323a43", "secondary-fixed-dim": "#69d8d1", "on-error": "#690005", "on-primary-container": "#befffc", "surface-dim": "#0c141c", "background": "#0c141c", "on-secondary-container": "#00302e", "on-surface-variant": "#bec9c7", "tertiary-container": "#52738a", "error-container": "#93000a", "surface-container": "#182029", "surface-container-lowest": "#070f17", "surface-container-low": "#141c25", "outline": "#889392", "on-primary": "#003736", "on-background": "#dbe3ef", "on-tertiary-fixed": "#001e2e", "inverse-surface": "#dbe3ef", "on-secondary-fixed-variant": "#00504d", "on-secondary-fixed": "#00201e", "surface-variant": "#2e353e" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "margin": "1rem", "space-sm": "0.5rem", "space-md": "0.875rem", "space-xs": "0.25rem", "gutter": "0.75rem", "space-xl": "1.75rem", "space-lg": "1.25rem" }, fontFamily: { "headline-lg-mobile": ["Manrope"], "headline-sm": ["Manrope"], "headline-lg": ["Manrope"], "headline-md": ["Manrope"], "label-md": ["Inter"], "label-lg": ["Inter"], "body-lg": ["Inter"], "body-md": ["Inter"], "title-md": ["Manrope"], "body-sm": ["Inter"], "label-sm": ["Inter"] }, fontSize: { "headline-lg-mobile": ["26px", { lineHeight: "32px", letterSpacing: "-0.02em", fontWeight: "700" }], "headline-sm": ["18px", { lineHeight: "24px", letterSpacing: "-0.01em", fontWeight: "600" }], "headline-lg": ["30px", { lineHeight: "38px", letterSpacing: "-0.02em", fontWeight: "700" }], "headline-md": ["22px", { lineHeight: "28px", letterSpacing: "-0.015em", fontWeight: "600" }], "label-md": ["11px", { lineHeight: "14px", letterSpacing: "0.04em", fontWeight: "600" }], "label-lg": ["13px", { lineHeight: "16px", letterSpacing: "0.01em", fontWeight: "600" }], "body-lg": ["15px", { lineHeight: "22px", letterSpacing: "0em", fontWeight: "400" }], "body-md": ["13px", { lineHeight: "18px", letterSpacing: "0em", fontWeight: "400" }], "title-md": ["15px", { lineHeight: "20px", letterSpacing: "-0.005em", fontWeight: "600" }], "body-sm": ["12px", { lineHeight: "16px", letterSpacing: "0.01em", fontWeight: "400" }], "label-sm": ["10px", { lineHeight: "12px", letterSpacing: "0.05em", fontWeight: "500" }] } } } }</script><style>@layer base{html,body{width:100%;margin:0;padding:0;background-color:#0c141c;color:#dbe3ef;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.38)]"><div class="h-16 px-margin flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-xs min-w-0"><button aria-label="Navigate Back" class="w-11 h-11 flex items-center justify-center rounded-lg text-on-surface-variant hover:text-on-surface transition-colors" onclick="history.back()"><span class="material-symbols-outlined text-[20px]">arrow_back</span></button><div class="flex items-center gap-space-xs min-w-0"><img alt="ClassLens Institutional Emblem" class="h-7 w-auto object-contain shrink-0" src="/static/images/emblem.svg"/><h1 class="font-title-md text-title-md text-on-surface truncate">Faculty Detail Review</h1></div></div><div class="flex items-center gap-space-xs shrink-0"><button aria-label="Actions" class="w-11 h-11 flex items-center justify-center rounded-lg text-on-surface-variant hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[20px]">more_vert</span></button><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-outline-variant/30" src="/static/images/avatar-placeholder.svg"/></div></div></header><main class="flex flex-col relative w-full pt-16 pb-safe min-h-screen bg-surface"><div class="flex flex-col w-full pb-10">
+<!-- Documentary Backdrop Framing (Contextual Academic Mood) -->
+<div class="relative w-full overflow-hidden bg-surface-container-lowest px-margin pt-space-lg pb-space-xl">
+<div class="absolute inset-0 opacity-15 pointer-events-none">
+<img class="w-full h-full object-cover grayscale mix-blend-luminosity" src="/static/images/classroom-banner.svg"/>
+<div class="absolute inset-0 bg-gradient-to-b from-surface via-surface/90 to-surface"></div>
+</div>
+<!-- Session Heading & Meta -->
+<div class="relative z-10 flex flex-col gap-space-sm">
+<div class="flex items-center justify-between gap-space-xs">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-primary-container/20 text-primary font-label-md text-label-md tracking-wide uppercase">
+<span class="w-1.5 h-1.5 rounded-full bg-primary {{ 'animate-pulse' if not report }}"></span>
+          {{ 'Archived Audit' if report else (session.status if session else 'Unknown') }} · Session #{{ session.session_id if session else '' }}
+        </span>
+<span class="font-label-md text-label-md text-on-surface-variant/80">{{ session.created_at[:16].replace('T', ' ') if session else '' }}</span>
+</div>
+<div class="flex flex-col gap-1">
+<h2 class="font-headline-md text-headline-md text-on-surface font-semibold tracking-tight">{{ session.subject if session else 'Unknown Session' }}</h2>
+<div class="flex items-center gap-2 font-body-sm text-body-sm text-on-surface-variant">
+<span class="inline-flex items-center gap-1 text-on-surface font-medium">
+<span class="material-symbols-outlined text-[15px] text-primary">school</span>
+            {{ session.year if session else '' }}{{ 'st' if session and session.year == 1 else 'nd' if session and session.year == 2 else 'rd' if session and session.year == 3 else 'th' if session else '' }} Year B.Tech
+          </span>
+<span class="text-outline-variant">•</span>
+<span>{{ session.hall if session else '' }}</span>
+<span class="text-outline-variant">•</span>
+<span>{{ session.faculty_name if session else '' }}</span>
+</div>
+</div>
+{% if report %}
+<div class="mt-space-xs flex items-center gap-gutter">
+<button class="flex-1 flex items-center justify-center gap-2 h-11 px-4 rounded-xl bg-primary-container text-on-primary font-label-lg text-label-lg transition-all active:scale-[0.98] shadow-sm hover:bg-secondary-container" id="exportPdfBtn">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>Export Report as PDF</span>
+</button>
+<button aria-label="Share Audit" class="w-11 h-11 flex items-center justify-center rounded-xl bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-colors">
+<span class="material-symbols-outlined text-[18px]">share</span>
+</button>
+</div>
+{% endif %}
+</div>
+</div>
+{% if not report %}
+<!-- Processing / error state: no fabricated data while the pipeline hasn't produced a report yet -->
+<section class="px-margin -mt-space-md relative z-20 flex flex-col gap-space-sm">
+<div class="p-space-md rounded-xl bg-surface-container/95 backdrop-blur-xl shadow-lg flex flex-col gap-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px] {{ 'animate-spin' if session and session.status in ['queued','processing'] }}">{{ 'error' if session and session.status == 'error' else 'sync' }}</span>
+<span class="font-title-md text-title-md text-on-surface">
+  {% if not session %}Session not found{% elif session.status == 'error' %}Analysis failed{% elif session.status == 'pending_pipeline' %}Media probed -- pipeline stages pending{% else %}Analysis in progress{% endif %}
+</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+{% if not session %}
+  No session with this ID was found.
+{% elif session.status == 'error' %}
+  {{ session.error }}
+{% elif session.media_info %}
+  Uploaded file probed: {{ (session.media_info.duration_sec / 60) | round(1) }} min, audio={{ session.media_info.has_audio }}, video={{ session.media_info.has_video }}. Waiting on transcription, video analysis, aggregation, relevance classification and report generation.
+{% else %}
+  Your lecture recording is queued for analysis. This page will refresh with real metrics once the pipeline finishes.
+{% endif %}
+</p>
+<button class="self-start px-3 py-1.5 rounded-lg bg-surface-container-high text-primary font-label-md text-label-md" onclick="location.reload()">Refresh</button>
+</div>
+</section>
+{% else %}
+<!-- Minute-by-Minute Scrubbable Rail Section -->
+<section class="px-margin -mt-space-md relative z-20 flex flex-col gap-space-sm">
+<div class="p-space-md rounded-xl bg-surface-container/95 backdrop-blur-xl shadow-lg flex flex-col gap-space-md">
+<!-- Section Header with Time & Legend -->
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">graphic_eq</span>
+<span class="font-title-md text-title-md text-on-surface">Pedagogical Cadence</span>
+</div>
+<span class="font-label-lg text-label-lg font-mono text-primary bg-surface-container-highest px-2 py-0.5 rounded" id="scrubTimeDisplay">00:00 / {{ duration_label }}</span>
+</div>
+<!-- Timeline Canvas Track -->
+<div class="flex flex-col gap-2">
+<div class="relative w-full h-8 bg-surface-container-lowest rounded-lg overflow-hidden cursor-pointer select-none" id="timelineTrack">
+{% for seg in report.timeline_segments %}
+<div class="absolute top-0 bottom-0 {{ seg.color_class }}" style="left: {{ seg.start_pct }}%; width: {{ seg.width_pct }}%;" title="{{ seg.label }}"></div>
+{% endfor %}
+<div class="absolute top-0 bottom-0 left-[2%] -translate-x-1/2 w-3 flex flex-col items-center justify-between pointer-events-none transition-all duration-75" id="scrubberPin">
+<div class="w-2.5 h-2.5 bg-primary-fixed rounded-full shadow-md"></div>
+<div class="w-[2px] h-full bg-primary-fixed"></div>
+<div class="w-2 h-1 bg-primary-fixed rounded-sm"></div>
+</div>
+</div>
+<!-- Scale Labels -->
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant/70 font-mono px-0.5">
+<span>00:00</span>
+<span>{{ duration_label }}</span>
+</div>
+</div>
+<!-- Compact Legend Strip -->
+<div class="grid grid-cols-2 gap-y-1.5 gap-x-2 pt-1 font-label-sm text-label-sm text-on-surface-variant">
+{% for item in report.legend %}
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-sm {{ item.swatch_class }} shrink-0"></span>
+<span class="truncate">{{ item.label }} ({{ item.pct }}%)</span>
+</div>
+{% endfor %}
+</div>
+<!-- Dynamic Scrub Observation Card -->
+<div class="p-space-sm rounded-lg bg-surface-container-high flex flex-col gap-1" id="scrubCard">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5 text-secondary font-label-md text-label-md">
+<span class="material-symbols-outlined text-[15px]">psychology</span>
+<span id="scrubTag">{{ report.cues[0].tag if report.cues else 'No notable moments detected' }}</span>
+</div>
+<span class="font-mono text-label-sm text-on-surface-variant" id="scrubStamp">@ {{ report.cues[0].time_label if report.cues else '00:00' }}</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface leading-relaxed" id="scrubText">
+          {{ report.cues[0].text if report.cues else 'The pipeline did not flag any notable pedagogical moments in this session.' }}
+        </p>
+</div>
+</div>
+</section>
+<!-- Core Lecture Analytics 4-Card Micro-Grid -->
+<section class="px-margin mt-space-lg flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<h3 class="font-title-md text-title-md text-on-surface">Lecture Delivery Metrics</h3>
+<span class="font-label-md text-label-md text-secondary">AI Observation Audit</span>
+</div>
+<div class="grid grid-cols-2 gap-gutter">
+<!-- Talk Ratio Card -->
+<div class="p-space-md rounded-xl bg-surface-container flex flex-col justify-between gap-space-sm">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-md text-label-md uppercase tracking-wider">Talk Ratio</span>
+<span class="material-symbols-outlined text-[18px] text-primary">record_voice_over</span>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex items-baseline gap-1">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">{{ report.metrics.talk_ratio_teacher_pct }}%</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">/ {{ report.metrics.talk_ratio_student_pct }}%</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary">Instructor vs. Student</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container-highest overflow-hidden flex">
+<div class="h-full bg-primary-container" style="width: {{ report.metrics.talk_ratio_teacher_pct }}%"></div>
+<div class="h-full bg-secondary-container" style="width: {{ report.metrics.talk_ratio_student_pct }}%"></div>
+</div>
+</div>
+<!-- Speech Pace Card -->
+<div class="p-space-md rounded-xl bg-surface-container flex flex-col justify-between gap-space-sm">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-md text-label-md uppercase tracking-wider">Speech Pace</span>
+<span class="material-symbols-outlined text-[18px] text-primary">speed</span>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex items-baseline gap-1">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">{{ report.metrics.wpm }}</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">wpm</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary">{{ report.metrics.wpm_note }}</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-primary" style="width: {{ report.metrics.wpm_bar_pct }}%"></div>
+</div>
+</div>
+<!-- Wait Time Card -->
+<div class="p-space-md rounded-xl bg-surface-container flex flex-col justify-between gap-space-sm">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-md text-label-md uppercase tracking-wider">Avg Wait Time</span>
+<span class="material-symbols-outlined text-[18px] text-primary">hourglass_top</span>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex items-baseline gap-1">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">{{ report.metrics.avg_wait_time_sec }}</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">sec</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary">{{ report.metrics.avg_wait_time_note }}</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-secondary" style="width: {{ report.metrics.avg_wait_time_bar_pct }}%"></div>
+</div>
+</div>
+<!-- Gesture & Board Presence -->
+<div class="p-space-md rounded-xl bg-surface-container flex flex-col justify-between gap-space-sm">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-md text-label-md uppercase tracking-wider">Board Presence</span>
+<span class="material-symbols-outlined text-[18px] text-primary">co_present</span>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex items-baseline gap-1">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">{{ report.metrics.board_presence_pct }}%</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">index</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary">{{ report.metrics.board_presence_note }}</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-primary-container" style="width: {{ report.metrics.board_presence_pct }}%"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- AI Pedagogical Coaching Card (Featured Highlight) -->
+<section class="px-margin mt-space-lg flex flex-col gap-space-sm">
+<div class="p-space-md rounded-xl bg-surface-container-high flex flex-col gap-space-md shadow-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-lg bg-primary-container/30 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">auto_awesome</span>
+</div>
+<span class="font-title-md text-title-md text-on-surface">Institutional Coaching Digest</span>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container-highest text-secondary">{{ report.quality_grade }}</span>
+</div>
+{% for item in report.coaching %}
+<div class="flex items-start gap-space-sm p-space-sm rounded-lg bg-surface-container">
+<span class="material-symbols-outlined text-secondary text-[18px] shrink-0 mt-0.5">{{ item.icon }}</span>
+<div class="flex flex-col gap-0.5">
+<span class="font-label-md text-label-md text-on-surface font-medium">{{ item.title }}</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            {{ item.text }}
+          </p>
+</div>
+</div>
+{% else %}
+<div class="flex items-start gap-space-sm p-space-sm rounded-lg bg-surface-container">
+<span class="material-symbols-outlined text-secondary text-[18px] shrink-0 mt-0.5">info</span>
+<div class="flex flex-col gap-0.5">
+<span class="font-label-md text-label-md text-on-surface font-medium">No coaching notes generated</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">The coaching model did not return observations for this session.</p>
+</div>
+</div>
+{% endfor %}
+</div>
+</section>
+<!-- Syllabus & Academic Rigor Status -->
+<section class="px-margin mt-space-lg flex flex-col gap-space-sm">
+<h3 class="font-title-md text-title-md text-on-surface">Curricular Alignment</h3>
+<div class="p-space-md rounded-xl bg-surface-container flex flex-col gap-space-md">
+<!-- Syllabus Unit Progress -->
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-tertiary">menu_book</span>
+<span class="font-label-lg text-label-lg text-on-surface">{{ report.syllabus.unit_name }}</span>
+</div>
+<span class="font-label-md text-label-md text-primary font-mono font-semibold">{{ report.syllabus.pct_covered }}% Covered</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-secondary-container" style="width: {{ report.syllabus.pct_covered }}%"></div>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>Scheduled: {{ report.syllabus.scheduled_pct }}%</span>
+<span class="text-primary font-medium">{{ report.syllabus.delta_note }}</span>
+</div>
+</div>
+<!-- Verification Badges -->
+<div class="pt-2 flex flex-col gap-2">
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-low">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-primary">fact_check</span>
+<span class="font-body-sm text-body-sm text-on-surface">Topic Relevance Filter</span>
+</div>
+<span class="inline-flex items-center gap-1 font-label-md text-label-md {{ 'text-secondary' if report.topic_relevance.off_topic_count == 0 else 'text-error' }}">
+<span class="material-symbols-outlined text-[14px]">{{ 'check_circle' if report.topic_relevance.off_topic_count == 0 else 'flag' }}</span>
+            {{ report.topic_relevance.note }}
+          </span>
+</div>
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-low">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-tertiary">assignment_turned_in</span>
+<span class="font-body-sm text-body-sm text-on-surface">HOD Audit Review Status</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant">Pending HOD Review</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Timeline Feedback Script -->
+<script>
+    (function () {
+      const track = document.getElementById('timelineTrack');
+      const pin = document.getElementById('scrubberPin');
+      const timeDisplay = document.getElementById('scrubTimeDisplay');
+      const scrubTag = document.getElementById('scrubTag');
+      const scrubStamp = document.getElementById('scrubStamp');
+      const scrubText = document.getElementById('scrubText');
+      const exportBtn = document.getElementById('exportPdfBtn');
+      const durationSec = {{ report.duration_sec | default(0) }};
+      const cues = {{ report.cues | default([]) | tojson }};
+
+      function fmt(sec) {
+        const m = Math.floor(sec / 60).toString().padStart(2, '0');
+        const s = Math.floor(sec % 60).toString().padStart(2, '0');
+        return m + ':' + s;
+      }
+
+      function updateScrubber(pct) {
+        pct = Math.max(0.02, Math.min(0.98, pct));
+        pin.style.left = (pct * 100) + '%';
+
+        let nearest = cues[0];
+        let minDist = 999;
+        cues.forEach(c => {
+          const dist = Math.abs(c.pct / 100 - pct);
+          if (dist < minDist) { minDist = dist; nearest = c; }
+        });
+
+        const totalSec = Math.round(pct * durationSec);
+        timeDisplay.innerText = fmt(totalSec) + ' / ' + fmt(durationSec);
+        if (nearest) {
+          scrubStamp.innerText = '@ ' + nearest.time_label;
+          scrubTag.innerText = nearest.tag;
+          scrubText.innerText = nearest.text;
+        }
+      }
+
+      if (track) {
+        track.addEventListener('click', function (e) {
+          const rect = track.getBoundingClientRect();
+          updateScrubber((e.clientX - rect.left) / rect.width);
+        });
+        let isDragging = false;
+        track.addEventListener('pointerdown', function (e) {
+          isDragging = true;
+          track.setPointerCapture(e.pointerId);
+          const rect = track.getBoundingClientRect();
+          updateScrubber((e.clientX - rect.left) / rect.width);
+        });
+        track.addEventListener('pointermove', function (e) {
+          if (!isDragging) return;
+          const rect = track.getBoundingClientRect();
+          updateScrubber((e.clientX - rect.left) / rect.width);
+        });
+        track.addEventListener('pointerup', function () { isDragging = false; });
+      }
+
+      if (exportBtn) {
+        exportBtn.addEventListener('click', function () {
+          window.print();
+        });
+      }
+    })();
+  </script>
+{% endif %}
+</div></main></body></html>

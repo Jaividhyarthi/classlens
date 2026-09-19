@@ -1,0 +1,44 @@
+{
+  "faculty": [
+    {
+      "id": "EMP-ME-102",
+      "name": "Dr. Anjali Sharma",
+      "title": "Associate Professor",
+      "department": "Mechanical Engineering",
+      "specialization": "Thermal Sciences",
+      "subjects": ["Thermodynamics III", "Heat Transfer"],
+      "years_taught": [3],
+      "email": "dr.anjali@apexeng.edu.in"
+    },
+    {
+      "id": "EMP-ME-115",
+      "name": "Prof. Rajesh Kulkarni",
+      "title": "Assistant Professor (Sr. Scale)",
+      "department": "Mechanical Engineering",
+      "specialization": "Fluid Mechanics & Hydraulics",
+      "subjects": ["Thermodynamics III", "Fluid Dynamics", "IC Engines"],
+      "years_taught": [3],
+      "email": "r.kulkarni@apexeng.edu.in"
+    },
+    {
+      "id": "EMP-ME-084",
+      "name": "Dr. Sunita Verma",
+      "title": "Professor & Dean Academic Affairs",
+      "department": "Mechanical Engineering",
+      "specialization": "Materials & Metallurgy",
+      "subjects": ["Thermodynamics III", "Applied Metallurgy", "Heat Transfer"],
+      "years_taught": [3],
+      "email": "s.verma@apexeng.edu.in"
+    },
+    {
+      "id": "EMP-ME-142",
+      "name": "Er. Vikramaditya Sen",
+      "title": "Assistant Professor",
+      "department": "Mechanical Engineering",
+      "specialization": "Turbomachinery",
+      "subjects": ["Thermodynamics III", "Kinematics of Machines"],
+      "years_taught": [3],
+      "email": "v.sen@apexeng.edu.in"
+    }
+  ]
+}
